@@ -1,0 +1,51 @@
+{
+  "character": {
+    "id": "pc_001",
+    "name": "Thalia Moonshadow",
+    "race": "Half-Elf",
+    "classes": [
+      { "class": "Rogue", "level": 3 },
+      { "class": "Fighter", "level": 2 }
+    ],
+    "dexterity": 18,
+    "armorClass": 16,
+    "maxHP": 42,
+    "currentHP": 38
+  },
+  "npc": {
+    "id": "npc_001",
+    "name": "Adult Red Dragon",
+    "armorClass": 19,
+    "dexterity": 10,
+    "initiativeModifier": 0,
+    "maxHP": 256,
+    "currentHP": 256,
+    "legendaryActions": {
+      "maxPerRound": 3,
+      "remaining": 3,
+      "actions": [
+        { "name": "Wing Attack", "description": "Costs 2 actions. The dragon beats its wings..." },
+        { "name": "Detect", "description": "The dragon makes a Wisdom (Perception) check." },
+        { "name": "Tail Attack", "description": "The dragon makes a tail attack." }
+      ]
+    }
+  },
+  "encounter": {
+    "id": "encounter_001",
+    "name": "Ambush in the Marshes",
+    "participants": [
+      {
+        "id": "pc_001",
+        "type": "player",
+        "initiativeRoll": 14
+      },
+      {
+        "id": "npc_001",
+        "type": "npc",
+        "initiativeRoll": 14
+      }
+    ],
+    "round": 1,
+    "turnIndex": 0
+  }
+}

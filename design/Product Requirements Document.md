@@ -1,7 +1,7 @@
 # Product Requirements Document (PRD)
 **Product Name:** D&D Encounter Tracker Web App  
 **Version:** 1.3  
-**Date:** [Replace with today's date]
+**Date:** 2025-05-24
 
 ## 1. Purpose
 The D&D Encounter Tracker Web App enables Dungeon Masters to manage combat efficiently. It supports initiative, HP, AC, class/race tracking, legendary actions, and Dexterity-based tiebreakers. Data is persisted between sessions.

@@ -1,35 +1,59 @@
 {
-  "character": {
-    "id": "pc_001",
-    "name": "Thalia Moonshadow",
-    "race": "Half-Elf",
-    "classes": [
-      { "class": "Rogue", "level": 3 },
-      { "class": "Fighter", "level": 2 }
-    ],
-    "dexterity": 18,
-    "armorClass": 16,
-    "maxHP": 42,
-    "currentHP": 38
-  },
-  "npc": {
-    "id": "npc_001",
-    "name": "Adult Red Dragon",
-    "armorClass": 19,
-    "dexterity": 10,
-    "initiativeModifier": 0,
-    "maxHP": 256,
-    "currentHP": 256,
-    "legendaryActions": {
-      "maxPerRound": 3,
-      "remaining": 3,
-      "actions": [
-        { "name": "Wing Attack", "description": "Costs 2 actions. The dragon beats its wings..." },
-        { "name": "Detect", "description": "The dragon makes a Wisdom (Perception) check." },
-        { "name": "Tail Attack", "description": "The dragon makes a tail attack." }
-      ]
+  "characters": {
+    "pc_001": {
+      "id": "pc_001",
+      "name": "Thalia Moonshadow",
+      "race": "Half-Elf",
+      "classes": [
+        { "class": "Rogue", "level": 3 },
+        { "class": "Fighter", "level": 2 }
+      ],
+      "dexterity": 18,
+      "armorClass": 16,
+      "maxHP": 42,
+      "currentHP": 38
+    },
+    "pc_002": {
+      "id": "pc_002",
+      "name": "Barundar the Brave",
+      "race": "Dwarf",
+      "classes": [
+        { "class": "Cleric", "level": 5 }
+      ],
+      "dexterity": 12,
+      "armorClass": 18,
+      "maxHP": 55,
+      "currentHP": 55
+    },
+    "npc_001": {
+      "id": "npc_001",
+      "name": "Adult Red Dragon",
+      "armorClass": 19,
+      "dexterity": 10,
+      "initiativeModifier": 0,
+      "maxHP": 256,
+      "currentHP": 256,
+      "legendaryActions": {
+        "maxPerRound": 3,
+        "remaining": 3,
+        "actions": [
+          { "name": "Wing Attack", "description": "Costs 2 actions. The dragon beats its wings to knock back enemies." },
+          { "name": "Detect", "description": "The dragon makes a Wisdom (Perception) check." },
+          { "name": "Tail Attack", "description": "The dragon makes a tail attack." }
+        ]
+      }
     }
   },
+
+  "party": {
+    "id": "party_001",
+    "name": "The Emberblades",
+    "members": [
+      "pc_001",
+      "pc_002"
+    ]
+  },
+
   "encounter": {
     "id": "encounter_001",
     "name": "Ambush in the Marshes",
@@ -37,15 +61,63 @@
       {
         "id": "pc_001",
         "type": "player",
-        "initiativeRoll": 14
+        "initiativeRoll": 14,
+        "dexteritySnapshot": 18,
+        "totalDamageDealt": 23,
+        "totalDamageTaken": 17,
+        "actionsTaken": [
+          {
+            "round": 1,
+            "turn": 1,
+            "actionName": "Sneak Attack",
+            "actionType": "attack",
+            "description": "Backstabbed the ogre from stealth.",
+            "damageDealt": 18,
+            "damageTaken": 0,
+            "target": "npc_001"
+          },
+          {
+            "round": 2,
+            "turn": 2,
+            "actionName": "Dash",
+            "actionType": "movement",
+            "description": "Moved to flank the enemy.",
+            "damageDealt": 0,
+            "damageTaken": 3
+          }
+        ]
       },
       {
         "id": "npc_001",
         "type": "npc",
-        "initiativeRoll": 14
+        "initiativeRoll": 14,
+        "dexteritySnapshot": 10,
+        "totalDamageDealt": 45,
+        "totalDamageTaken": 38,
+        "actionsTaken": [
+          {
+            "round": 1,
+            "turn": 3,
+            "actionName": "Fire Breath",
+            "actionType": "attack",
+            "description": "Exhaled fire in a cone.",
+            "damageDealt": 30,
+            "damageTaken": 0,
+            "target": "pc_001"
+          },
+          {
+            "round": 2,
+            "turn": 4,
+            "actionName": "Wing Attack",
+            "actionType": "legendary",
+            "description": "Beat wings to knock back enemies.",
+            "damageDealt": 15,
+            "damageTaken": 0
+          }
+        ]
       }
     ],
-    "round": 1,
-    "turnIndex": 0
+    "round": 2,
+    "turnIndex": 1
   }
 }

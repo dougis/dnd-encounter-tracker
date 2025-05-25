@@ -1,0 +1,705 @@
+{
+  "users": [
+    {
+      "_id": "507f1f77bcf86cd799439011",
+      "username": "dungeon_master_42",
+      "email": "dm@example.com",
+      "passwordHash": "$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/lewds7koUiGy/VRoS",
+      "subscription": {
+        "tier": "premium",
+        "status": "active",
+        "startDate": "2024-01-01T00:00:00.000Z",
+        "endDate": "2025-01-01T00:00:00.000Z",
+        "trialEndDate": null,
+        "paymentProvider": "stripe",
+        "externalSubscriptionId": "sub_1234567890",
+        "autoRenew": true
+      },
+      "usage": {
+        "partiesCreated": 3,
+        "encountersCreated": 12,
+        "creaturesCreated": 45,
+        "sessionsThisMonth": 8,
+        "storageUsedMB": 15.7,
+        "lastUsageReset": "2024-01-01T00:00:00.000Z"
+      },
+      "features": {
+        "maxParties": 10,
+        "maxEncounters": 50,
+        "maxCreatures": 200,
+        "maxParticipantsPerEncounter": 20,
+        "cloudSync": true,
+        "advancedCombatLog": true,
+        "customThemes": true,
+        "exportFeatures": true,
+        "prioritySupport": true,
+        "betaAccess": true,
+        "collaborativeMode": true,
+        "automatedBackups": true
+      },
+      "preferences": {
+        "theme": "dark",
+        "defaultDiceRoller": true,
+        "autoSave": true,
+        "notifications": {
+          "email": true,
+          "marketing": false,
+          "updates": true
+        }
+      },
+      "createdAt": "2024-01-15T10:30:00.000Z",
+      "updatedAt": "2024-01-20T14:45:00.000Z"
+    },
+    {
+      "_id": "507f1f77bcf86cd799439012",
+      "username": "epic_storyteller",
+      "email": "storyteller@example.com",
+      "passwordHash": "$2b$12$abc123def456ghi789jkl0mnopqrstuvwxyzABCDEF",
+      "subscription": {
+        "tier": "free",
+        "status": "active",
+        "startDate": "2024-02-01T09:15:00.000Z",
+        "endDate": null,
+        "trialEndDate": "2024-02-15T09:15:00.000Z",
+        "paymentProvider": null,
+        "externalSubscriptionId": null,
+        "autoRenew": false
+      },
+      "usage": {
+        "partiesCreated": 1,
+        "encountersCreated": 2,
+        "creaturesCreated": 8,
+        "sessionsThisMonth": 3,
+        "storageUsedMB": 2.1,
+        "lastUsageReset": "2024-02-01T00:00:00.000Z"
+      },
+      "features": {
+        "maxParties": 1,
+        "maxEncounters": 3,
+        "maxCreatures": 10,
+        "maxParticipantsPerEncounter": 6,
+        "cloudSync": false,
+        "advancedCombatLog": false,
+        "customThemes": false,
+        "exportFeatures": false,
+        "prioritySupport": false,
+        "betaAccess": false,
+        "collaborativeMode": false,
+        "automatedBackups": false
+      },
+      "preferences": {
+        "theme": "light",
+        "defaultDiceRoller": false,
+        "autoSave": true,
+        "notifications": {
+          "email": true,
+          "marketing": true,
+          "updates": true
+        }
+      },
+      "createdAt": "2024-02-01T09:15:00.000Z",
+      "updatedAt": "2024-02-01T09:15:00.000Z"
+    },
+    {
+      "_id": "507f1f77bcf86cd799439013",
+      "username": "guild_master_alex",
+      "email": "alex@dndguild.com",
+      "passwordHash": "$2b$12$xyz789abc456def123ghi456jkl789mno",
+      "subscription": {
+        "tier": "guild_master",
+        "status": "active",
+        "startDate": "2023-06-01T00:00:00.000Z",
+        "endDate": "2024-06-01T00:00:00.000Z",
+        "trialEndDate": null,
+        "paymentProvider": "stripe",
+        "externalSubscriptionId": "sub_9876543210",
+        "autoRenew": true
+      },
+      "usage": {
+        "partiesCreated": 47,
+        "encountersCreated": 234,
+        "creaturesCreated": 891,
+        "sessionsThisMonth": 32,
+        "storageUsedMB": 156.3,
+        "lastUsageReset": "2024-01-01T00:00:00.000Z"
+      },
+      "features": {
+        "maxParties": -1,
+        "maxEncounters": -1,
+        "maxCreatures": -1,
+        "maxParticipantsPerEncounter": 50,
+        "cloudSync": true,
+        "advancedCombatLog": true,
+        "customThemes": true,
+        "exportFeatures": true,
+        "prioritySupport": true,
+        "betaAccess": true,
+        "collaborativeMode": true,
+        "automatedBackups": true
+      },
+      "preferences": {
+        "theme": "dark",
+        "defaultDiceRoller": true,
+        "autoSave": true,
+        "notifications": {
+          "email": true,
+          "marketing": false,
+          "updates": true
+        }
+      },
+      "createdAt": "2023-06-01T10:00:00.000Z",
+      "updatedAt": "2024-01-22T08:30:00.000Z"
+    }
+  ],
+  "parties": [
+    {
+      "_id": "507f1f77bcf86cd799439021",
+      "userId": "507f1f77bcf86cd799439011",
+      "name": "The Crimson Companions",
+      "description": "A band of heroes united by fate and a shared love of treasure",
+      "characters": [
+        {
+          "_id": "507f1f77bcf86cd799439031",
+          "name": "Thorgrim Ironforge",
+          "ac": 18,
+          "maxHP": 95,
+          "currentHP": 95,
+          "dexterity": 12,
+          "playerName": "Mike Johnson",
+          "classes": [
+            {
+              "className": "Fighter",
+              "level": 8
+            },
+            {
+              "className": "Cleric",
+              "level": 2
+            }
+          ],
+          "race": "Mountain Dwarf",
+          "subrace": "Gold Dwarf",
+          "notes": "Favors his ancestral warhammer, has a fear of spiders"
+        },
+        {
+          "_id": "507f1f77bcf86cd799439032",
+          "name": "Lyralei Moonwhisper",
+          "ac": 15,
+          "maxHP": 68,
+          "currentHP": 68,
+          "dexterity": 18,
+          "playerName": "Sarah Chen",
+          "classes": [
+            {
+              "className": "Ranger",
+              "level": 7
+            }
+          ],
+          "race": "Wood Elf",
+          "subrace": null,
+          "notes": "Expert tracker, has a wolf companion named Shadow"
+        },
+        {
+          "_id": "507f1f77bcf86cd799439033",
+          "name": "Zephyr Stormcaller",
+          "ac": 13,
+          "maxHP": 52,
+          "currentHP": 45,
+          "dexterity": 14,
+          "playerName": "Alex Rivera",
+          "classes": [
+            {
+              "className": "Sorcerer",
+              "level": 6
+            }
+          ],
+          "race": "Dragonborn",
+          "subrace": "Blue Dragonborn",
+          "notes": "Lightning affinity, impulsive but loyal"
+        },
+        {
+          "_id": "507f1f77bcf86cd799439034",
+          "name": "Whisper Shadowstep",
+          "ac": 16,
+          "maxHP": 61,
+          "currentHP": 61,
+          "dexterity": 20,
+          "playerName": "Jordan Kim",
+          "classes": [
+            {
+              "className": "Rogue",
+              "level": 7
+            }
+          ],
+          "race": "Half-Elf",
+          "subrace": null,
+          "notes": "Master of stealth, has connections in the thieves' guild"
+        }
+      ],
+      "createdAt": "2024-01-16T11:00:00.000Z",
+      "updatedAt": "2024-01-22T16:30:00.000Z"
+    }
+  ],
+  "creatures": [
+    {
+      "_id": "507f1f77bcf86cd799439041",
+      "userId": "507f1f77bcf86cd799439011",
+      "name": "Ancient Red Dragon",
+      "type": "monster",
+      "ac": 22,
+      "maxHP": 546,
+      "dexterity": 10,
+      "challengeRating": "24",
+      "legendaryActions": [
+        {
+          "name": "Detect",
+          "description": "The dragon makes a Wisdom (Perception) check.",
+          "cost": 1
+        },
+        {
+          "name": "Tail Attack",
+          "description": "The dragon makes a tail attack.",
+          "cost": 1
+        },
+        {
+          "name": "Wing Attack",
+          "description": "The dragon beats its wings. Each creature within 15 ft. must succeed on a DC 25 Dexterity saving throw or take 17 (2d6 + 10) bludgeoning damage and be knocked prone.",
+          "cost": 2
+        }
+      ],
+      "legendaryActionsPerTurn": 3,
+      "isTemplate": true,
+      "createdAt": "2024-01-15T12:00:00.000Z",
+      "updatedAt": "2024-01-15T12:00:00.000Z"
+    },
+    {
+      "_id": "507f1f77bcf86cd799439042",
+      "userId": "507f1f77bcf86cd799439011",
+      "name": "Goblin Warrior",
+      "type": "monster",
+      "ac": 15,
+      "maxHP": 7,
+      "dexterity": 14,
+      "challengeRating": "1/4",
+      "legendaryActions": [],
+      "legendaryActionsPerTurn": 0,
+      "isTemplate": true,
+      "createdAt": "2024-01-15T12:15:00.000Z",
+      "updatedAt": "2024-01-15T12:15:00.000Z"
+    },
+    {
+      "_id": "507f1f77bcf86cd799439043",
+      "userId": "507f1f77bcf86cd799439011",
+      "name": "Captain Vex Blackwater",
+      "type": "npc",
+      "ac": 17,
+      "maxHP": 112,
+      "dexterity": 16,
+      "challengeRating": "8",
+      "legendaryActions": [],
+      "legendaryActionsPerTurn": 0,
+      "isTemplate": false,
+      "createdAt": "2024-01-18T14:20:00.000Z",
+      "updatedAt": "2024-01-18T14:20:00.000Z"
+    }
+  ],
+  "encounters": [
+    {
+      "_id": "507f1f77bcf86cd799439051",
+      "userId": "507f1f77bcf86cd799439011",
+      "name": "The Dragon's Lair Showdown",
+      "description": "Final confrontation with the ancient red dragon in its volcanic lair",
+      "status": "active",
+      "participants": [
+        {
+          "_id": "507f1f77bcf86cd799439061",
+          "type": "character",
+          "referenceId": "507f1f77bcf86cd799439031",
+          "name": "Thorgrim Ironforge",
+          "ac": 18,
+          "maxHP": 95,
+          "currentHP": 73,
+          "dexterity": 12,
+          "initiativeRoll": 14,
+          "initiativeOrder": 2,
+          "isManuallyOrdered": false,
+          "conditions": [
+            {
+              "name": "Frightened",
+              "duration": 2,
+              "description": "Frightened by the dragon's presence"
+            }
+          ],
+          "legendaryActionsRemaining": 0,
+          "notes": "Used Action Surge this turn"
+        },
+        {
+          "_id": "507f1f77bcf86cd799439062",
+          "type": "character",
+          "referenceId": "507f1f77bcf86cd799439032",
+          "name": "Lyralei Moonwhisper",
+          "ac": 15,
+          "maxHP": 68,
+          "currentHP": 68,
+          "dexterity": 18,
+          "initiativeRoll": 19,
+          "initiativeOrder": 0,
+          "isManuallyOrdered": false,
+          "conditions": [],
+          "legendaryActionsRemaining": 0,
+          "notes": "Hunter's Mark on dragon"
+        },
+        {
+          "_id": "507f1f77bcf86cd799439063",
+          "type": "character",
+          "referenceId": "507f1f77bcf86cd799439033",
+          "name": "Zephyr Stormcaller",
+          "ac": 13,
+          "maxHP": 52,
+          "currentHP": 12,
+          "dexterity": 14,
+          "initiativeRoll": 11,
+          "initiativeOrder": 3,
+          "isManuallyOrdered": false,
+          "conditions": [
+            {
+              "name": "Poisoned",
+              "duration": 1,
+              "description": "Poisoned by dragon's breath"
+            }
+          ],
+          "legendaryActionsRemaining": 0,
+          "notes": "Low on spell slots"
+        },
+        {
+          "_id": "507f1f77bcf86cd799439064",
+          "type": "character",
+          "referenceId": "507f1f77bcf86cd799439034",
+          "name": "Whisper Shadowstep",
+          "ac": 16,
+          "maxHP": 61,
+          "currentHP": 48,
+          "dexterity": 20,
+          "initiativeRoll": 17,
+          "initiativeOrder": 1,
+          "isManuallyOrdered": false,
+          "conditions": [],
+          "legendaryActionsRemaining": 0,
+          "notes": "Hiding behind pillar"
+        },
+        {
+          "_id": "507f1f77bcf86cd799439065",
+          "type": "creature",
+          "referenceId": "507f1f77bcf86cd799439041",
+          "name": "Pyraxis the Destroyer",
+          "ac": 22,
+          "maxHP": 546,
+          "currentHP": 312,
+          "dexterity": 10,
+          "initiativeRoll": 8,
+          "initiativeOrder": 4,
+          "isManuallyOrdered": false,
+          "conditions": [],
+          "legendaryActionsRemaining": 2,
+          "notes": "Bloodied, enraged state activated"
+        }
+      ],
+      "currentTurn": 1,
+      "round": 4,
+      "combatLog": [
+        {
+          "_id": "507f1f77bcf86cd799439071",
+          "action": "turn_start",
+          "participantId": "507f1f77bcf86cd799439062",
+          "description": "Lyralei begins her turn",
+          "timestamp": "2024-01-22T19:45:00.000Z"
+        },
+        {
+          "_id": "507f1f77bcf86cd799439072",
+          "action": "damage",
+          "participantId": "507f1f77bcf86cd799439065",
+          "description": "Lyralei hits with longbow attack",
+          "damage": 23,
+          "timestamp": "2024-01-22T19:45:30.000Z"
+        },
+        {
+          "_id": "507f1f77bcf86cd799439073",
+          "action": "legendary_action",
+          "participantId": "507f1f77bcf86cd799439065",
+          "description": "Dragon uses Wing Attack",
+          "timestamp": "2024-01-22T19:46:00.000Z"
+        },
+        {
+          "_id": "507f1f77bcf86cd799439074",
+          "action": "damage",
+          "participantId": "507f1f77bcf86cd799439064",
+          "description": "Whisper takes wing attack damage",
+          "damage": 13,
+          "timestamp": "2024-01-22T19:46:15.000Z"
+        },
+        {
+          "_id": "507f1f77bcf86cd799439075",
+          "action": "condition_added",
+          "participantId": "507f1f77bcf86cd799439064",
+          "description": "Whisper is knocked prone",
+          "timestamp": "2024-01-22T19:46:20.000Z"
+        }
+      ],
+      "createdAt": "2024-01-22T18:30:00.000Z",
+      "updatedAt": "2024-01-22T19:46:20.000Z"
+    },
+    {
+      "_id": "507f1f77bcf86cd799439052",
+      "userId": "507f1f77bcf86cd799439011",
+      "name": "Goblin Ambush",
+      "description": "A pack of goblins attacks the party on the forest road",
+      "status": "completed",
+      "participants": [
+        {
+          "_id": "507f1f77bcf86cd799439066",
+          "type": "character",
+          "referenceId": "507f1f77bcf86cd799439031",
+          "name": "Thorgrim Ironforge",
+          "ac": 18,
+          "maxHP": 95,
+          "currentHP": 95,
+          "dexterity": 12,
+          "initiativeRoll": 16,
+          "initiativeOrder": 1,
+          "isManuallyOrdered": false,
+          "conditions": [],
+          "legendaryActionsRemaining": 0,
+          "notes": ""
+        },
+        {
+          "_id": "507f1f77bcf86cd799439067",
+          "type": "creature",
+          "referenceId": "507f1f77bcf86cd799439042",
+          "name": "Goblin Scout #1",
+          "ac": 15,
+          "maxHP": 7,
+          "currentHP": 0,
+          "dexterity": 14,
+          "initiativeRoll": 12,
+          "initiativeOrder": 2,
+          "isManuallyOrdered": false,
+          "conditions": [
+            {
+              "name": "Unconscious",
+              "duration": -1,
+              "description": "Knocked unconscious"
+            }
+          ],
+          "legendaryActionsRemaining": 0,
+          "notes": "Defeated"
+        }
+      ],
+      "currentTurn": 0,
+      "round": 1,
+      "combatLog": [
+        {
+          "_id": "507f1f77bcf86cd799439076",
+          "action": "damage",
+          "participantId": "507f1f77bcf86cd799439067",
+          "description": "Thorgrim's warhammer strike",
+          "damage": 12,
+          "timestamp": "2024-01-20T15:30:00.000Z"
+        }
+      ],
+      "createdAt": "2024-01-22T18:30:00.000Z",
+      "updatedAt": "2024-01-22T19:46:20.000Z"
+    }
+  ],
+  "subscriptionTiers": [
+    {
+      "_id": "507f1f77bcf86cd799439091",
+      "name": "free",
+      "displayName": "Free Adventurer",
+      "description": "Perfect for trying out the basics of encounter management",
+      "pricing": {
+        "monthly": 0,
+        "yearly": 0,
+        "currency": "USD"
+      },
+      "features": {
+        "maxParties": 1,
+        "maxEncounters": 3,
+        "maxCreatures": 10,
+        "maxParticipantsPerEncounter": 6,
+        "cloudSync": false,
+        "advancedCombatLog": false,
+        "customThemes": false,
+        "exportFeatures": false,
+        "prioritySupport": false,
+        "betaAccess": false,
+        "collaborativeMode": false,
+        "automatedBackups": false
+      },
+      "isActive": true,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "_id": "507f1f77bcf86cd799439092",
+      "name": "basic",
+      "displayName": "Seasoned Adventurer",
+      "description": "Great for regular DMs who want cloud sync and more content",
+      "pricing": {
+        "monthly": 4.99,
+        "yearly": 49.99,
+        "currency": "USD"
+      },
+      "features": {
+        "maxParties": 3,
+        "maxEncounters": 15,
+        "maxCreatures": 50,
+        "maxParticipantsPerEncounter": 10,
+        "cloudSync": true,
+        "advancedCombatLog": true,
+        "customThemes": false,
+        "exportFeatures": true,
+        "prioritySupport": false,
+        "betaAccess": false,
+        "collaborativeMode": false,
+        "automatedBackups": true
+      },
+      "isActive": true,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "_id": "507f1f77bcf86cd799439093",
+      "name": "premium",
+      "displayName": "Expert Dungeon Master",
+      "description": "Advanced features for serious DMs running multiple campaigns",
+      "pricing": {
+        "monthly": 9.99,
+        "yearly": 99.99,
+        "currency": "USD"
+      },
+      "features": {
+        "maxParties": 10,
+        "maxEncounters": 50,
+        "maxCreatures": 200,
+        "maxParticipantsPerEncounter": 20,
+        "cloudSync": true,
+        "advancedCombatLog": true,
+        "customThemes": true,
+        "exportFeatures": true,
+        "prioritySupport": true,
+        "betaAccess": true,
+        "collaborativeMode": true,
+        "automatedBackups": true
+      },
+      "isActive": true,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "_id": "507f1f77bcf86cd799439094",
+      "name": "dungeon_master",
+      "displayName": "Master of Dungeons",
+      "description": "Professional-grade tools for power users and content creators",
+      "pricing": {
+        "monthly": 19.99,
+        "yearly": 199.99,
+        "currency": "USD"
+      },
+      "features": {
+        "maxParties": 25,
+        "maxEncounters": 100,
+        "maxCreatures": 500,
+        "maxParticipantsPerEncounter": 30,
+        "cloudSync": true,
+        "advancedCombatLog": true,
+        "customThemes": true,
+        "exportFeatures": true,
+        "prioritySupport": true,
+        "betaAccess": true,
+        "collaborativeMode": true,
+        "automatedBackups": true
+      },
+      "isActive": true,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "_id": "507f1f77bcf86cd799439095",
+      "name": "guild_master",
+      "displayName": "Guild Master",
+      "description": "Unlimited power for gaming communities and professional DMs",
+      "pricing": {
+        "monthly": 39.99,
+        "yearly": 399.99,
+        "currency": "USD"
+      },
+      "features": {
+        "maxParties": -1,
+        "maxEncounters": -1,
+        "maxCreatures": -1,
+        "maxParticipantsPerEncounter": 50,
+        "cloudSync": true,
+        "advancedCombatLog": true,
+        "customThemes": true,
+        "exportFeatures": true,
+        "prioritySupport": true,
+        "betaAccess": true,
+        "collaborativeMode": true,
+        "automatedBackups": true
+      },
+      "isActive": true,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    }
+  ],
+  "paymentTransactions": [
+    {
+      "_id": "507f1f77bcf86cd799439101",
+      "userId": "507f1f77bcf86cd799439011",
+      "transactionId": "txn_premium_2024_001",
+      "amount": 99.99,
+      "currency": "USD",
+      "status": "completed",
+      "paymentProvider": "stripe",
+      "providerTransactionId": "pi_1234567890abcdef",
+      "subscriptionTier": "premium",
+      "billingPeriod": "yearly",
+      "metadata": {
+        "couponCode": "EARLY2024",
+        "discountAmount": 20.00,
+        "originalAmount": 119.99
+      },
+      "createdAt": "2024-01-01T00:15:00.000Z",
+      "updatedAt": "2024-01-01T00:15:30.000Z"
+    },
+    {
+      "_id": "507f1f77bcf86cd799439102",
+      "userId": "507f1f77bcf86cd799439013",
+      "transactionId": "txn_guild_2023_015",
+      "amount": 399.99,
+      "currency": "USD",
+      "status": "completed",
+      "paymentProvider": "stripe",
+      "providerTransactionId": "pi_0987654321fedcba",
+      "subscriptionTier": "guild_master",
+      "billingPeriod": "yearly",
+      "metadata": {
+        "isRenewal": true,
+        "previousSubscriptionId": "sub_previous_123"
+      },
+      "createdAt": "2023-06-01T10:30:00.000Z",
+      "updatedAt": "2023-06-01T10:30:45.000Z"
+    }
+  ],
+  "sessions": [
+    {
+      "_id": "507f1f77bcf86cd799439081",
+      "userId": "507f1f77bcf86cd799439011",
+      "encounterId": "507f1f77bcf86cd799439051",
+      "isActive": true,
+      "lastActivity": "2024-01-22T19:46:20.000Z",
+      "socketId": "abc123def456",
+      "createdAt": "2024-01-22T18:30:00.000Z",
+      "updatedAt": "2024-01-22T19:46:20.000Z"
+    }
+  ]
+}

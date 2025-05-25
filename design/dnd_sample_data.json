@@ -5,10 +5,47 @@
       "username": "dungeon_master_42",
       "email": "dm@example.com",
       "passwordHash": "$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/lewds7koUiGy/VRoS",
+      "subscription": {
+        "tier": "premium",
+        "status": "active",
+        "startDate": "2024-01-01T00:00:00.000Z",
+        "endDate": "2025-01-01T00:00:00.000Z",
+        "trialEndDate": null,
+        "paymentProvider": "stripe",
+        "externalSubscriptionId": "sub_1234567890",
+        "autoRenew": true
+      },
+      "usage": {
+        "partiesCreated": 3,
+        "encountersCreated": 12,
+        "creaturesCreated": 45,
+        "sessionsThisMonth": 8,
+        "storageUsedMB": 15.7,
+        "lastUsageReset": "2024-01-01T00:00:00.000Z"
+      },
+      "features": {
+        "maxParties": 10,
+        "maxEncounters": 50,
+        "maxCreatures": 200,
+        "maxParticipantsPerEncounter": 20,
+        "cloudSync": true,
+        "advancedCombatLog": true,
+        "customThemes": true,
+        "exportFeatures": true,
+        "prioritySupport": true,
+        "betaAccess": true,
+        "collaborativeMode": true,
+        "automatedBackups": true
+      },
       "preferences": {
         "theme": "dark",
         "defaultDiceRoller": true,
-        "autoSave": true
+        "autoSave": true,
+        "notifications": {
+          "email": true,
+          "marketing": false,
+          "updates": true
+        }
       },
       "createdAt": "2024-01-15T10:30:00.000Z",
       "updatedAt": "2024-01-20T14:45:00.000Z"
@@ -18,13 +55,100 @@
       "username": "epic_storyteller",
       "email": "storyteller@example.com",
       "passwordHash": "$2b$12$abc123def456ghi789jkl0mnopqrstuvwxyzABCDEF",
+      "subscription": {
+        "tier": "free",
+        "status": "active",
+        "startDate": "2024-02-01T09:15:00.000Z",
+        "endDate": null,
+        "trialEndDate": "2024-02-15T09:15:00.000Z",
+        "paymentProvider": null,
+        "externalSubscriptionId": null,
+        "autoRenew": false
+      },
+      "usage": {
+        "partiesCreated": 1,
+        "encountersCreated": 2,
+        "creaturesCreated": 8,
+        "sessionsThisMonth": 3,
+        "storageUsedMB": 2.1,
+        "lastUsageReset": "2024-02-01T00:00:00.000Z"
+      },
+      "features": {
+        "maxParties": 1,
+        "maxEncounters": 3,
+        "maxCreatures": 10,
+        "maxParticipantsPerEncounter": 6,
+        "cloudSync": false,
+        "advancedCombatLog": false,
+        "customThemes": false,
+        "exportFeatures": false,
+        "prioritySupport": false,
+        "betaAccess": false,
+        "collaborativeMode": false,
+        "automatedBackups": false
+      },
       "preferences": {
         "theme": "light",
         "defaultDiceRoller": false,
-        "autoSave": true
+        "autoSave": true,
+        "notifications": {
+          "email": true,
+          "marketing": true,
+          "updates": true
+        }
       },
       "createdAt": "2024-02-01T09:15:00.000Z",
       "updatedAt": "2024-02-01T09:15:00.000Z"
+    },
+    {
+      "_id": "507f1f77bcf86cd799439013",
+      "username": "guild_master_alex",
+      "email": "alex@dndguild.com",
+      "passwordHash": "$2b$12$xyz789abc456def123ghi456jkl789mno",
+      "subscription": {
+        "tier": "guild_master",
+        "status": "active",
+        "startDate": "2023-06-01T00:00:00.000Z",
+        "endDate": "2024-06-01T00:00:00.000Z",
+        "trialEndDate": null,
+        "paymentProvider": "stripe",
+        "externalSubscriptionId": "sub_9876543210",
+        "autoRenew": true
+      },
+      "usage": {
+        "partiesCreated": 47,
+        "encountersCreated": 234,
+        "creaturesCreated": 891,
+        "sessionsThisMonth": 32,
+        "storageUsedMB": 156.3,
+        "lastUsageReset": "2024-01-01T00:00:00.000Z"
+      },
+      "features": {
+        "maxParties": -1,
+        "maxEncounters": -1,
+        "maxCreatures": -1,
+        "maxParticipantsPerEncounter": 50,
+        "cloudSync": true,
+        "advancedCombatLog": true,
+        "customThemes": true,
+        "exportFeatures": true,
+        "prioritySupport": true,
+        "betaAccess": true,
+        "collaborativeMode": true,
+        "automatedBackups": true
+      },
+      "preferences": {
+        "theme": "dark",
+        "defaultDiceRoller": true,
+        "autoSave": true,
+        "notifications": {
+          "email": true,
+          "marketing": false,
+          "updates": true
+        }
+      },
+      "createdAt": "2023-06-01T10:00:00.000Z",
+      "updatedAt": "2024-01-22T08:30:00.000Z"
     }
   ],
   "parties": [
@@ -381,8 +505,189 @@
           "timestamp": "2024-01-20T15:30:00.000Z"
         }
       ],
-      "createdAt": "2024-01-20T15:00:00.000Z",
-      "updatedAt": "2024-01-20T15:35:00.000Z"
+      "createdAt": "2024-01-22T18:30:00.000Z",
+      "updatedAt": "2024-01-22T19:46:20.000Z"
+    }
+  ],
+  "subscriptionTiers": [
+    {
+      "_id": "507f1f77bcf86cd799439091",
+      "name": "free",
+      "displayName": "Free Adventurer",
+      "description": "Perfect for trying out the basics of encounter management",
+      "pricing": {
+        "monthly": 0,
+        "yearly": 0,
+        "currency": "USD"
+      },
+      "features": {
+        "maxParties": 1,
+        "maxEncounters": 3,
+        "maxCreatures": 10,
+        "maxParticipantsPerEncounter": 6,
+        "cloudSync": false,
+        "advancedCombatLog": false,
+        "customThemes": false,
+        "exportFeatures": false,
+        "prioritySupport": false,
+        "betaAccess": false,
+        "collaborativeMode": false,
+        "automatedBackups": false
+      },
+      "isActive": true,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "_id": "507f1f77bcf86cd799439092",
+      "name": "basic",
+      "displayName": "Seasoned Adventurer",
+      "description": "Great for regular DMs who want cloud sync and more content",
+      "pricing": {
+        "monthly": 4.99,
+        "yearly": 49.99,
+        "currency": "USD"
+      },
+      "features": {
+        "maxParties": 3,
+        "maxEncounters": 15,
+        "maxCreatures": 50,
+        "maxParticipantsPerEncounter": 10,
+        "cloudSync": true,
+        "advancedCombatLog": true,
+        "customThemes": false,
+        "exportFeatures": true,
+        "prioritySupport": false,
+        "betaAccess": false,
+        "collaborativeMode": false,
+        "automatedBackups": true
+      },
+      "isActive": true,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "_id": "507f1f77bcf86cd799439093",
+      "name": "premium",
+      "displayName": "Expert Dungeon Master",
+      "description": "Advanced features for serious DMs running multiple campaigns",
+      "pricing": {
+        "monthly": 9.99,
+        "yearly": 99.99,
+        "currency": "USD"
+      },
+      "features": {
+        "maxParties": 10,
+        "maxEncounters": 50,
+        "maxCreatures": 200,
+        "maxParticipantsPerEncounter": 20,
+        "cloudSync": true,
+        "advancedCombatLog": true,
+        "customThemes": true,
+        "exportFeatures": true,
+        "prioritySupport": true,
+        "betaAccess": true,
+        "collaborativeMode": true,
+        "automatedBackups": true
+      },
+      "isActive": true,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "_id": "507f1f77bcf86cd799439094",
+      "name": "dungeon_master",
+      "displayName": "Master of Dungeons",
+      "description": "Professional-grade tools for power users and content creators",
+      "pricing": {
+        "monthly": 19.99,
+        "yearly": 199.99,
+        "currency": "USD"
+      },
+      "features": {
+        "maxParties": 25,
+        "maxEncounters": 100,
+        "maxCreatures": 500,
+        "maxParticipantsPerEncounter": 30,
+        "cloudSync": true,
+        "advancedCombatLog": true,
+        "customThemes": true,
+        "exportFeatures": true,
+        "prioritySupport": true,
+        "betaAccess": true,
+        "collaborativeMode": true,
+        "automatedBackups": true
+      },
+      "isActive": true,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "_id": "507f1f77bcf86cd799439095",
+      "name": "guild_master",
+      "displayName": "Guild Master",
+      "description": "Unlimited power for gaming communities and professional DMs",
+      "pricing": {
+        "monthly": 39.99,
+        "yearly": 399.99,
+        "currency": "USD"
+      },
+      "features": {
+        "maxParties": -1,
+        "maxEncounters": -1,
+        "maxCreatures": -1,
+        "maxParticipantsPerEncounter": 50,
+        "cloudSync": true,
+        "advancedCombatLog": true,
+        "customThemes": true,
+        "exportFeatures": true,
+        "prioritySupport": true,
+        "betaAccess": true,
+        "collaborativeMode": true,
+        "automatedBackups": true
+      },
+      "isActive": true,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    }
+  ],
+  "paymentTransactions": [
+    {
+      "_id": "507f1f77bcf86cd799439101",
+      "userId": "507f1f77bcf86cd799439011",
+      "transactionId": "txn_premium_2024_001",
+      "amount": 99.99,
+      "currency": "USD",
+      "status": "completed",
+      "paymentProvider": "stripe",
+      "providerTransactionId": "pi_1234567890abcdef",
+      "subscriptionTier": "premium",
+      "billingPeriod": "yearly",
+      "metadata": {
+        "couponCode": "EARLY2024",
+        "discountAmount": 20.00,
+        "originalAmount": 119.99
+      },
+      "createdAt": "2024-01-01T00:15:00.000Z",
+      "updatedAt": "2024-01-01T00:15:30.000Z"
+    },
+    {
+      "_id": "507f1f77bcf86cd799439102",
+      "userId": "507f1f77bcf86cd799439013",
+      "transactionId": "txn_guild_2023_015",
+      "amount": 399.99,
+      "currency": "USD",
+      "status": "completed",
+      "paymentProvider": "stripe",
+      "providerTransactionId": "pi_0987654321fedcba",
+      "subscriptionTier": "guild_master",
+      "billingPeriod": "yearly",
+      "metadata": {
+        "isRenewal": true,
+        "previousSubscriptionId": "sub_previous_123"
+      },
+      "createdAt": "2023-06-01T10:30:00.000Z",
+      "updatedAt": "2023-06-01T10:30:45.000Z"
     }
   ],
   "sessions": [

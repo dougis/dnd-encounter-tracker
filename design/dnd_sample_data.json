@@ -1,4 +1,98 @@
-{
+      "createdAt": "2023-06-01T10:30:00.000Z",
+      "updatedAt": "2023-06-01T10:30:45.000Z"
+    }
+  ],
+  "adminActions": [
+    {
+      "_id": "507f1f77bcf86cd799439121",
+      "adminUserId": "507f1f77bcf86cd799439014",
+      "targetUserId": "507f1f77bcf86cd799439015",
+      "action": "custom_pricing_set",
+      "details": {
+        "oldValue": {
+          "monthlyAmount": 9.99,
+          "yearlyAmount": 99.99
+        },
+        "newValue": {
+          "monthlyAmount": 5.99,
+          "yearlyAmount": 59.99,
+          "currency": "USD",
+          "reason": "Early adopter discount - 40% off standard premium pricing"
+        },
+        "reason": "VIP customer - early adopter with referral bonus"
+      },
+      "ipAddress": "192.168.1.100",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+      "createdAt": "2024-02-01T10:00:00.000Z",
+      "updatedAt": "2024-02-01T10:00:00.000Z"
+    },
+    {
+      "_id": "507f1f77bcf86cd799439122",
+      "adminUserId": "507f1f77bcf86cd799439014",
+      "targetUserId": "507f1f77bcf86cd799439012",
+      "action": "subscription_tier_change",
+      "details": {
+        "oldValue": {
+          "tier": "free",
+          "status": "trial"
+        },
+        "newValue": {
+          "tier": "basic",
+          "status": "active"
+        },
+        "reason": "Promotional upgrade for beta tester feedback"
+      },
+      "ipAddress": "192.168.1.100",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+      "createdAt": "2024-02-15T14:30:00.000Z",
+      "updatedAt": "2024-02-15T14:30:00.000Z"
+    }
+  ],
+  "adminActions": [
+    {
+      "_id": "507f1f77bcf86cd799439121",
+      "adminUserId": "507f1f77bcf86cd799439014",
+      "targetUserId": "507f1f77bcf86cd799439015",
+      "action": "custom_pricing_set",
+      "details": {
+        "oldValue": {
+          "monthlyAmount": 9.99,
+          "yearlyAmount": 99.99
+        },
+        "newValue": {
+          "monthlyAmount": 5.99,
+          "yearlyAmount": 59.99,
+          "currency": "USD",
+          "reason": "Early adopter discount - 40% off standard premium pricing"
+        },
+        "reason": "VIP customer - early adopter with referral bonus"
+      },
+      "ipAddress": "192.168.1.100",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+      "createdAt": "2024-02-01T10:00:00.000Z",
+      "updatedAt": "2024-02-01T10:00:00.000Z"
+    },
+    {
+      "_id": "507f1f77bcf86cd799439122",
+      "adminUserId": "507f1f77bcf86cd799439014",
+      "targetUserId": "507f1f77bcf86cd799439012",
+      "action": "subscription_tier_change",
+      "details": {
+        "oldValue": {
+          "tier": "free",
+          "status": "trial"
+        },
+        "newValue": {
+          "tier": "basic",
+          "status": "active"
+        },
+        "reason": "Promotional upgrade for beta tester feedback"
+      },
+      "ipAddress": "192.168.1.100",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
+      "createdAt": "2024-02-15T14:30:00.000Z",
+      "updatedAt": "2024-02-15T14:30:00.000Z"
+    {
   "users": [
     {
       "_id": "507f1f77bcf86cd799439011",
@@ -105,6 +199,7 @@
       "username": "guild_master_alex",
       "email": "alex@dndguild.com",
       "passwordHash": "$2b$12$xyz789abc456def123ghi456jkl789mno",
+      "isAdmin": false,
       "subscription": {
         "tier": "guild_master",
         "status": "active",
@@ -149,6 +244,117 @@
       },
       "createdAt": "2023-06-01T10:00:00.000Z",
       "updatedAt": "2024-01-22T08:30:00.000Z"
+    },
+    {
+      "_id": "507f1f77bcf86cd799439014",
+      "username": "admin_master",
+      "email": "admin@dndtracker.com",
+      "passwordHash": "$2b$12$admin_hash_example_secure_password",
+      "isAdmin": true,
+      "subscription": {
+        "tier": "guild_master",
+        "status": "active",
+        "startDate": "2024-01-01T00:00:00.000Z",
+        "endDate": null,
+        "trialEndDate": null,
+        "paymentProvider": null,
+        "externalSubscriptionId": null,
+        "autoRenew": false
+      },
+      "usage": {
+        "partiesCreated": 0,
+        "encountersCreated": 0,
+        "creaturesCreated": 0,
+        "sessionsThisMonth": 0,
+        "storageUsedMB": 0,
+        "lastUsageReset": "2024-01-01T00:00:00.000Z"
+      },
+      "features": {
+        "maxParties": -1,
+        "maxEncounters": -1,
+        "maxCreatures": -1,
+        "maxParticipantsPerEncounter": 50,
+        "cloudSync": true,
+        "advancedCombatLog": true,
+        "customThemes": true,
+        "exportFeatures": true,
+        "prioritySupport": true,
+        "betaAccess": true,
+        "collaborativeMode": true,
+        "automatedBackups": true
+      },
+      "preferences": {
+        "theme": "dark",
+        "defaultDiceRoller": true,
+        "autoSave": true,
+        "notifications": {
+          "email": true,
+          "marketing": false,
+          "updates": true
+        }
+      },
+      "adminNotes": "System administrator account with full privileges",
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "_id": "507f1f77bcf86cd799439015",
+      "username": "custom_pricing_user",
+      "email": "vip@example.com",
+      "passwordHash": "$2b$12$custom_user_hash_example",
+      "isAdmin": false,
+      "subscription": {
+        "tier": "premium",
+        "status": "active",
+        "startDate": "2024-02-01T00:00:00.000Z",
+        "endDate": "2025-02-01T00:00:00.000Z",
+        "trialEndDate": null,
+        "paymentProvider": "stripe",
+        "externalSubscriptionId": "sub_custom_123",
+        "autoRenew": true,
+        "customPricing": {
+          "monthlyAmount": 5.99,
+          "yearlyAmount": 59.99,
+          "currency": "USD",
+          "reason": "Early adopter discount - 40% off standard premium pricing",
+          "setBy": "507f1f77bcf86cd799439014",
+          "setAt": "2024-02-01T10:00:00.000Z"
+        }
+      },
+      "usage": {
+        "partiesCreated": 5,
+        "encountersCreated": 18,
+        "creaturesCreated": 67,
+        "sessionsThisMonth": 12,
+        "storageUsedMB": 8.3,
+        "lastUsageReset": "2024-02-01T00:00:00.000Z"
+      },
+      "features": {
+        "maxParties": 10,
+        "maxEncounters": 50,
+        "maxCreatures": 200,
+        "maxParticipantsPerEncounter": 20,
+        "cloudSync": true,
+        "advancedCombatLog": true,
+        "customThemes": true,
+        "exportFeatures": true,
+        "prioritySupport": true,
+        "betaAccess": true,
+        "collaborativeMode": true,
+        "automatedBackups": true
+      },
+      "preferences": {
+        "theme": "light",
+        "defaultDiceRoller": true,
+        "autoSave": true,
+        "notifications": {
+          "email": true,
+          "marketing": true,
+          "updates": true
+        }
+      },
+      "createdAt": "2024-02-01T09:30:00.000Z",
+      "updatedAt": "2024-02-01T10:00:00.000Z"
     }
   ],
   "parties": [

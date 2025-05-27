@@ -1,0 +1,31 @@
+{
+  "name": "dnd-encounter-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend",
+    "shared"
+  ],
+  "scripts": {
+    "start:frontend": "yarn workspace frontend dev",
+    "start:backend": "yarn workspace backend dev",
+    "build:frontend": "yarn workspace frontend build",
+    "build:backend": "yarn workspace backend build",
+    "test:frontend": "yarn workspace frontend test",
+    "test:backend": "yarn workspace backend test",
+    "lint:frontend": "yarn workspace frontend lint",
+    "lint:backend": "yarn workspace backend lint",
+    "dev": "concurrently \"yarn start:backend\" \"yarn start:frontend\"",
+    "build": "yarn build:backend && yarn build:frontend",
+    "test": "yarn test:backend && yarn test:frontend",
+    "lint": "yarn lint:backend && yarn lint:frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

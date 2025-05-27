@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist-test",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "jsx": "react",
+    "types": ["jest", "node"],
+    "target": "es2018"
+  },
+  "include": ["src/**/*", "test/**/*"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,20 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Install dependencies based on the package.json first
+COPY package.json package-lock.json ./
+RUN npm ci
+
+# Copy the rest of the backend code
+# Note: Most source files will be mounted as volumes in development
+COPY . .
+
+# Set environment variables
+ENV NODE_ENV=development
+
+# Expose the API port
+EXPOSE 3001
+
+# Start the development server with nodemon for auto-reloading
+CMD ["npm", "run", "dev"]

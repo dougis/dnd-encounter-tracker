@@ -1,0 +1,21 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Install dependencies based on the package.json first
+# This is done separately to take advantage of Docker's caching
+COPY package.json package-lock.json ./
+RUN npm ci
+
+# Copy the rest of the frontend code
+# Note: Most source files will be mounted as volumes in development
+COPY . .
+
+# Set environment variables
+ENV NODE_ENV=development
+
+# Expose the development port
+EXPOSE 3000
+
+# Start the development server
+CMD ["npm", "run", "dev"]
